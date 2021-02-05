@@ -10,3 +10,6 @@ services:
       - ./app:/app # real-time updates between project and container
     command: > # all container ip (0.0.0.0)
       sh -c "python manage.py runserver 0.0.0.0:8000"
+
+# To start a new django project:
+# docker-compose run app sh -c "django-admin.py startproject app ."
